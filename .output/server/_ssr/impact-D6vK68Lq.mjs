@@ -1,0 +1,1127 @@
+//#region node_modules/.nitro/vite/services/ssr/assets/impact-D6vK68Lq.js
+function readiness(total, components, strengths, recommendations) {
+	return {
+		total,
+		components,
+		strengths,
+		recommendations
+	};
+}
+var personas = [
+	{
+		id: "p1",
+		kind: "Computer Science student",
+		name: "Nattapong Sirichai",
+		headline: "Backend-leaning software engineer",
+		summary: "Final-year computer engineering student with an internship, an open-source API project and a research paper.",
+		passportNumber: "SL-2026-TH-004821",
+		verificationStatus: "Verified",
+		hasResume: true,
+		hasPortfolio: true,
+		hasGithub: true,
+		evidenceSources: [
+			{
+				label: "Nattapong_Resume_2026.pdf",
+				kind: "Resume",
+				note: "2 pages, 11 skills extracted"
+			},
+			{
+				label: "Senior_Project_SkillGraph.pdf",
+				kind: "Senior project",
+				note: "46 pages, 9 skills"
+			},
+			{
+				label: "github.com/nattapong-dev",
+				kind: "GitHub",
+				note: "3 repositories analysed"
+			}
+		],
+		certificates: ["AWS Certified Cloud Practitioner (CP-88213-TH)"],
+		projects: [
+			"SkillGraph recommender",
+			"Notification service",
+			"Portfolio web app"
+		],
+		skills: [
+			{
+				name: "TypeScript",
+				confidence: .94,
+				level: "Advanced",
+				transferable: false,
+				quote: "Shipped 14 REST endpoints in TypeScript."
+			},
+			{
+				name: "Python",
+				confidence: .9,
+				level: "Proficient",
+				transferable: false,
+				quote: "SkillGraph is implemented in Python 3.11 with FastAPI."
+			},
+			{
+				name: "Team Leadership",
+				confidence: .68,
+				level: "Working",
+				transferable: true,
+				quote: "Team lead for a 5-person hackathon team."
+			}
+		],
+		readiness: readiness(84, [
+			{
+				id: "r1",
+				label: "Quality of evidence",
+				labelTh: "คุณภาพหลักฐาน",
+				weight: 20,
+				score: 18,
+				reason: "Nine of eleven skills are backed by two or more independent sources."
+			},
+			{
+				id: "r2",
+				label: "Diversity of projects",
+				labelTh: "ความหลากหลายของโปรเจกต์",
+				weight: 15,
+				score: 13,
+				reason: "Backend service, research artefact and front-end app across three domains."
+			},
+			{
+				id: "r3",
+				label: "Learning consistency",
+				labelTh: "ความต่อเนื่องในการเรียนรู้",
+				weight: 12,
+				score: 10,
+				reason: "Commits in 9 of the last 12 months plus one certification in March 2026."
+			},
+			{
+				id: "r4",
+				label: "GitHub activity",
+				labelTh: "กิจกรรมบน GitHub",
+				weight: 13,
+				score: 11,
+				reason: "628 commits across 3 repositories, 2 with external contributors."
+			},
+			{
+				id: "r5",
+				label: "Portfolio quality",
+				labelTh: "คุณภาพพอร์ตโฟลิโอ",
+				weight: 10,
+				score: 7,
+				reason: "Portfolio present with case studies, but outcomes are only partly quantified."
+			},
+			{
+				id: "r6",
+				label: "Collaboration experience",
+				labelTh: "ประสบการณ์ทำงานร่วมกัน",
+				weight: 10,
+				score: 8,
+				reason: "Six-month supervised internship and multi-contributor repositories."
+			},
+			{
+				id: "r7",
+				label: "Problem complexity",
+				labelTh: "ความซับซ้อนของปัญหา",
+				weight: 10,
+				score: 9,
+				reason: "Vector retrieval tuning and a p95 latency reduction from 820ms to 190ms."
+			},
+			{
+				id: "r8",
+				label: "Skill verification level",
+				labelTh: "ระดับการยืนยันทักษะ",
+				weight: 10,
+				score: 8,
+				reason: "Eight skills reviewer-verified, two still self-reported."
+			}
+		], [
+			"หลักฐานจาก GitHub 3 repository",
+			"Portfolio พร้อม case study",
+			"Certificate ที่เกี่ยวข้องกับสายงาน",
+			"พัฒนาโปรเจกต์ต่อเนื่อง 9 เดือน",
+			"มีหลักฐานการทำงานร่วมกับผู้อื่น"
+		], [
+			"Testing depth (E2E)",
+			"Cloud deployment beyond ECS",
+			"CI/CD release strategy"
+		]),
+		jobMatches: [{
+			title: "Backend Developer",
+			matchScore: 88,
+			matching: [
+				"TypeScript",
+				"Python",
+				"PostgreSQL"
+			],
+			missing: ["Kafka"],
+			rationale: "Verified backend delivery across internship and senior project."
+		}, {
+			title: "Software Engineer",
+			matchScore: 85,
+			matching: [
+				"TypeScript",
+				"Docker",
+				"AWS"
+			],
+			missing: ["System design at scale"],
+			rationale: "Broad generalist evidence with measurable performance work."
+		}],
+		roadmap: [{
+			week: 1,
+			focus: "Event-driven architecture",
+			action: "Add an order-events consumer to skillgraph-api",
+			outcome: "Explain partitions and delivery guarantees",
+			hours: 8
+		}, {
+			week: 2,
+			focus: "Testing depth",
+			action: "Add Playwright coverage to CI",
+			outcome: "Green E2E suite gating merges",
+			hours: 5
+		}]
+	},
+	{
+		id: "p2",
+		kind: "Design student",
+		name: "Kanya Ratanaporn",
+		headline: "Product designer moving into design systems",
+		summary: "Design student with a Behance portfolio, community poster work and a documented design-system case study.",
+		passportNumber: "SL-2026-TH-004822",
+		verificationStatus: "Verified",
+		hasResume: true,
+		hasPortfolio: true,
+		hasGithub: false,
+		evidenceSources: [
+			{
+				label: "Kanya_Portfolio_2026.pdf",
+				kind: "Portfolio",
+				note: "24 pages, 8 skills extracted"
+			},
+			{
+				label: "behance.net/kanya-r",
+				kind: "Portfolio URL",
+				note: "11 published projects"
+			},
+			{
+				label: "Community_Poster_Brief.pdf",
+				kind: "Community project",
+				note: "Volunteer design for a temple fair"
+			}
+		],
+		certificates: ["Google UX Design Certificate"],
+		projects: [
+			"Clinic booking app redesign",
+			"Design-system starter kit",
+			"Community fair identity"
+		],
+		skills: [
+			{
+				name: "UI Design (Figma)",
+				confidence: .88,
+				level: "Proficient",
+				transferable: false,
+				quote: "Delivered a 42-component library with usage documentation."
+			},
+			{
+				name: "Creativity",
+				confidence: .8,
+				level: "Proficient",
+				transferable: true,
+				quote: "Produced three visual directions before selecting the final identity."
+			},
+			{
+				name: "Collaboration",
+				confidence: .74,
+				level: "Working",
+				transferable: true,
+				quote: "Worked with two developers to hand off tokens and specs."
+			}
+		],
+		readiness: readiness(76, [
+			{
+				id: "r1",
+				label: "Quality of evidence",
+				labelTh: "คุณภาพหลักฐาน",
+				weight: 20,
+				score: 16,
+				reason: "Portfolio artefacts include process, not only final visuals."
+			},
+			{
+				id: "r2",
+				label: "Diversity of projects",
+				labelTh: "ความหลากหลายของโปรเจกต์",
+				weight: 15,
+				score: 12,
+				reason: "Product, brand and community work across three contexts."
+			},
+			{
+				id: "r3",
+				label: "Learning consistency",
+				labelTh: "ความต่อเนื่องในการเรียนรู้",
+				weight: 12,
+				score: 9,
+				reason: "Certificate completed plus monthly portfolio updates."
+			},
+			{
+				id: "r4",
+				label: "GitHub activity",
+				labelTh: "กิจกรรมบน GitHub",
+				weight: 13,
+				score: 4,
+				reason: "No repositories; weight partially offset by published design files."
+			},
+			{
+				id: "r5",
+				label: "Portfolio quality",
+				labelTh: "คุณภาพพอร์ตโฟลิโอ",
+				weight: 10,
+				score: 10,
+				reason: "Case studies state problem, process and measured outcome."
+			},
+			{
+				id: "r6",
+				label: "Collaboration experience",
+				labelTh: "ประสบการณ์ทำงานร่วมกัน",
+				weight: 10,
+				score: 8,
+				reason: "Documented hand-off with engineers on two projects."
+			},
+			{
+				id: "r7",
+				label: "Problem complexity",
+				labelTh: "ความซับซ้อนของปัญหา",
+				weight: 10,
+				score: 8,
+				reason: "Accessibility constraints handled in the clinic redesign."
+			},
+			{
+				id: "r8",
+				label: "Skill verification level",
+				labelTh: "ระดับการยืนยันทักษะ",
+				weight: 10,
+				score: 9,
+				reason: "Reviewer confirmed authorship of the design-system files."
+			}
+		], [
+			"Portfolio พร้อมกระบวนการทำงาน",
+			"งานออกแบบเพื่อชุมชน",
+			"หลักฐานการส่งต่องานให้ทีมพัฒนา"
+		], [
+			"User research evidence",
+			"Usability testing with real participants",
+			"Basic front-end literacy"
+		]),
+		jobMatches: [{
+			title: "Product Designer",
+			matchScore: 84,
+			matching: ["UI Design (Figma)", "Creativity"],
+			missing: ["User research"],
+			rationale: "Strong craft evidence; research artefacts are thin."
+		}, {
+			title: "Design System Associate",
+			matchScore: 79,
+			matching: ["UI Design (Figma)", "Collaboration"],
+			missing: ["Front-end literacy"],
+			rationale: "Component library with documentation is directly relevant."
+		}],
+		roadmap: [{
+			week: 1,
+			focus: "User research",
+			action: "Run 5 moderated interviews and publish findings",
+			outcome: "A research artefact with quotes and themes",
+			hours: 6
+		}, {
+			week: 2,
+			focus: "Accessibility",
+			action: "Audit the component library to WCAG AA",
+			outcome: "Documented AA audit with fixes",
+			hours: 5
+		}]
+	},
+	{
+		id: "p3",
+		kind: "Career changer",
+		name: "Arthit Pholsawat",
+		headline: "Former hotel supervisor moving into technology support",
+		summary: "Eight years in hospitality operations, now completing self-directed online courses and small automation projects.",
+		passportNumber: "SL-2026-TH-004825",
+		verificationStatus: "Partially Verified",
+		hasResume: true,
+		hasPortfolio: false,
+		hasGithub: true,
+		evidenceSources: [
+			{
+				label: "Arthit_Work_History.pdf",
+				kind: "Resume",
+				note: "Hospitality operations, 8 years"
+			},
+			{
+				label: "Course_Completion_Transcript.pdf",
+				kind: "Online learning",
+				note: "6 courses, 140 hours"
+			},
+			{
+				label: "github.com/arthit-learns",
+				kind: "GitHub",
+				note: "2 practice repositories"
+			}
+		],
+		certificates: ["Google IT Support Certificate", "SQL for Data Analysis (online)"],
+		projects: ["Shift-scheduling spreadsheet automation", "Guest-complaint tracker"],
+		skills: [
+			{
+				name: "Customer Service",
+				confidence: .91,
+				level: "Advanced",
+				transferable: true,
+				quote: "Handled 40+ guest escalations per week with a 92% resolution rate."
+			},
+			{
+				name: "Problem Solving",
+				confidence: .82,
+				level: "Proficient",
+				transferable: true,
+				quote: "Rebuilt the shift roster process, cutting scheduling conflicts by half."
+			},
+			{
+				name: "Self Learning",
+				confidence: .86,
+				level: "Proficient",
+				transferable: true,
+				quote: "Completed 140 hours of IT support coursework while working full time."
+			}
+		],
+		readiness: readiness(71, [
+			{
+				id: "r1",
+				label: "Quality of evidence",
+				labelTh: "คุณภาพหลักฐาน",
+				weight: 20,
+				score: 15,
+				reason: "Employment records and transcripts are verifiable; technical artefacts are small."
+			},
+			{
+				id: "r2",
+				label: "Diversity of projects",
+				labelTh: "ความหลากหลายของโปรเจกต์",
+				weight: 15,
+				score: 9,
+				reason: "Two operational automation projects, both in the same domain."
+			},
+			{
+				id: "r3",
+				label: "Learning consistency",
+				labelTh: "ความต่อเนื่องในการเรียนรู้",
+				weight: 12,
+				score: 12,
+				reason: "Study activity in every month for 11 consecutive months."
+			},
+			{
+				id: "r4",
+				label: "GitHub activity",
+				labelTh: "กิจกรรมบน GitHub",
+				weight: 13,
+				score: 6,
+				reason: "Two practice repositories with regular but small commits."
+			},
+			{
+				id: "r5",
+				label: "Portfolio quality",
+				labelTh: "คุณภาพพอร์ตโฟลิโอ",
+				weight: 10,
+				score: 4,
+				reason: "No portfolio site; project write-ups exist only in the resume."
+			},
+			{
+				id: "r6",
+				label: "Collaboration experience",
+				labelTh: "ประสบการณ์ทำงานร่วมกัน",
+				weight: 10,
+				score: 9,
+				reason: "Supervised a 9-person shift team for four years."
+			},
+			{
+				id: "r7",
+				label: "Problem complexity",
+				labelTh: "ความซับซ้อนของปัญหา",
+				weight: 10,
+				score: 7,
+				reason: "Process redesign with measured outcomes, limited technical depth."
+			},
+			{
+				id: "r8",
+				label: "Skill verification level",
+				labelTh: "ระดับการยืนยันทักษะ",
+				weight: 10,
+				score: 9,
+				reason: "Employer reference letter confirms responsibilities."
+			}
+		], [
+			"ประสบการณ์บริการลูกค้าที่วัดผลได้",
+			"เรียนรู้ต่อเนื่อง 11 เดือน",
+			"เคยดูแลทีม 9 คน"
+		], [
+			"Publish a portfolio of the two automation projects",
+			"Ticketing-system familiarity",
+			"Networking fundamentals"
+		]),
+		jobMatches: [{
+			title: "IT Support Specialist",
+			matchScore: 78,
+			matching: [
+				"Customer Service",
+				"Problem Solving",
+				"Self Learning"
+			],
+			missing: ["Ticketing systems"],
+			rationale: "Service evidence transfers directly to support work."
+		}, {
+			title: "Operations Analyst",
+			matchScore: 70,
+			matching: ["Problem Solving", "Digital Literacy"],
+			missing: ["SQL depth"],
+			rationale: "Process improvement evidence with measurable results."
+		}],
+		roadmap: [{
+			week: 1,
+			focus: "Support tooling",
+			action: "Set up and document a Jira Service Desk sandbox",
+			outcome: "Screenshots and a written runbook",
+			hours: 6
+		}, {
+			week: 2,
+			focus: "Portfolio",
+			action: "Publish the two automation projects with before/after metrics",
+			outcome: "A public portfolio page",
+			hours: 4
+		}]
+	},
+	{
+		id: "p4",
+		kind: "NEET youth",
+		name: "Pornthip Kaewkla",
+		headline: "No formal resume — skills evidenced from family business and community work",
+		summary: "Left education after upper-secondary school. Ran the family noodle shop's online orders and coordinated a flood-relief volunteer group.",
+		passportNumber: "SL-2026-TH-004826",
+		verificationStatus: "Pending Review",
+		hasResume: false,
+		hasPortfolio: false,
+		hasGithub: false,
+		evidenceSources: [
+			{
+				label: "Guided interview transcript",
+				kind: "Life experience",
+				note: "Structured Thai-language intake, 18 minutes"
+			},
+			{
+				label: "Shop LINE OA order log (screenshots)",
+				kind: "Informal work",
+				note: "14 months of daily orders"
+			},
+			{
+				label: "Volunteer coordinator confirmation",
+				kind: "Community",
+				note: "Signed by the sub-district office"
+			}
+		],
+		certificates: ["Free online food-hygiene course (completed)"],
+		projects: ["Family shop online ordering", "Flood-relief volunteer roster"],
+		skills: [
+			{
+				name: "Customer Service",
+				confidence: .84,
+				level: "Proficient",
+				transferable: true,
+				quote: "Answered 30–50 customer messages a day and handled order problems personally."
+			},
+			{
+				name: "Entrepreneurial Mindset",
+				confidence: .79,
+				level: "Working",
+				transferable: true,
+				quote: "Moved the shop onto delivery platforms, raising weekday orders from 20 to 55."
+			},
+			{
+				name: "Project Management",
+				confidence: .72,
+				level: "Working",
+				transferable: true,
+				quote: "Built a roster for 22 volunteers over five days of flood relief."
+			},
+			{
+				name: "Digital Literacy",
+				confidence: .77,
+				level: "Working",
+				transferable: true,
+				quote: "Maintained the shop's LINE Official Account, menu photos and delivery-app listings."
+			}
+		],
+		readiness: readiness(63, [
+			{
+				id: "r1",
+				label: "Quality of evidence",
+				labelTh: "คุณภาพหลักฐาน",
+				weight: 20,
+				score: 12,
+				reason: "Screenshots and a signed community letter; no employer records exist."
+			},
+			{
+				id: "r2",
+				label: "Diversity of projects",
+				labelTh: "ความหลากหลายของโปรเจกต์",
+				weight: 15,
+				score: 10,
+				reason: "Commerce operations and volunteer coordination are two distinct contexts."
+			},
+			{
+				id: "r3",
+				label: "Learning consistency",
+				labelTh: "ความต่อเนื่องในการเรียนรู้",
+				weight: 12,
+				score: 7,
+				reason: "One completed online course and self-taught platform tooling."
+			},
+			{
+				id: "r4",
+				label: "GitHub activity",
+				labelTh: "กิจกรรมบน GitHub",
+				weight: 13,
+				score: 0,
+				reason: "Not applicable to this profile — the weight is redistributed and shown transparently, never used as a penalty signal in matching."
+			},
+			{
+				id: "r5",
+				label: "Portfolio quality",
+				labelTh: "คุณภาพพอร์ตโฟลิโอ",
+				weight: 10,
+				score: 6,
+				reason: "Order logs and photos act as an informal portfolio."
+			},
+			{
+				id: "r6",
+				label: "Collaboration experience",
+				labelTh: "ประสบการณ์ทำงานร่วมกัน",
+				weight: 10,
+				score: 9,
+				reason: "Coordinated 22 volunteers and worked daily with family staff."
+			},
+			{
+				id: "r7",
+				label: "Problem complexity",
+				labelTh: "ความซับซ้อนของปัญหา",
+				weight: 10,
+				score: 8,
+				reason: "Managed supply, pricing and delivery logistics under time pressure."
+			},
+			{
+				id: "r8",
+				label: "Skill verification level",
+				labelTh: "ระดับการยืนยันทักษะ",
+				weight: 10,
+				score: 5,
+				reason: "One community reference verified; the rest await reviewer sign-off."
+			}
+		], [
+			"บริหารร้านออนไลน์ 14 เดือน",
+			"ประสานงานอาสาสมัคร 22 คน",
+			"เรียนรู้เครื่องมือดิจิทัลด้วยตนเอง"
+		], [
+			"Reviewer verification of the shop order logs",
+			"A short spreadsheet/data course",
+			"One customer-service role simulation"
+		]),
+		jobMatches: [
+			{
+				title: "Customer Support Associate",
+				matchScore: 74,
+				matching: ["Customer Service", "Digital Literacy"],
+				missing: ["CRM tooling"],
+				rationale: "14 months of daily customer handling evidenced by order logs."
+			},
+			{
+				title: "E-commerce Operations Assistant",
+				matchScore: 71,
+				matching: ["Entrepreneurial Mindset", "Digital Literacy"],
+				missing: ["Inventory systems"],
+				rationale: "Ran listings, pricing and fulfilment for a real shop."
+			},
+			{
+				title: "Community Programme Coordinator",
+				matchScore: 68,
+				matching: ["Project Management", "Collaboration"],
+				missing: ["Reporting tools"],
+				rationale: "Volunteer roster evidence signed by the sub-district office."
+			}
+		],
+		roadmap: [{
+			week: 1,
+			focus: "Verification",
+			action: "Submit shop order logs to a SkillLens reviewer",
+			outcome: "Two skills move from pending to verified",
+			hours: 2
+		}, {
+			week: 2,
+			focus: "Digital tools",
+			action: "Complete a free spreadsheet fundamentals course",
+			outcome: "A certificate plus a sample stock sheet",
+			hours: 5
+		}]
+	},
+	{
+		id: "p5",
+		kind: "Micro-entrepreneur",
+		name: "Somsak Thongdee",
+		headline: "Market vendor scaling an online handicraft shop",
+		summary: "Runs a two-person weaving business selling on Shopee and TikTok, with supplier negotiation and content production evidence.",
+		passportNumber: "SL-2026-TH-004827",
+		verificationStatus: "Partially Verified",
+		hasResume: false,
+		hasPortfolio: true,
+		hasGithub: false,
+		evidenceSources: [
+			{
+				label: "Shopee seller dashboard export",
+				kind: "Informal work",
+				note: "3,180 orders over 2 years"
+			},
+			{
+				label: "TikTok content archive",
+				kind: "Content",
+				note: "96 product videos"
+			},
+			{
+				label: "Supplier agreement (redacted)",
+				kind: "Business document",
+				note: "Negotiated unit price and terms"
+			}
+		],
+		certificates: ["OTOP entrepreneur workshop (provincial)"],
+		projects: ["Handicraft online storefront", "Village weaving supplier network"],
+		skills: [
+			{
+				name: "Entrepreneurial Mindset",
+				confidence: .88,
+				level: "Advanced",
+				transferable: true,
+				quote: "Grew monthly revenue from 18,000 to 74,000 baht across eight months."
+			},
+			{
+				name: "Negotiation",
+				confidence: .8,
+				level: "Proficient",
+				transferable: true,
+				quote: "Agreed a 12% unit-price reduction with two village suppliers."
+			},
+			{
+				name: "Creativity",
+				confidence: .75,
+				level: "Working",
+				transferable: true,
+				quote: "Produced 96 short product videos, three exceeding 100k views."
+			},
+			{
+				name: "Digital Literacy",
+				confidence: .82,
+				level: "Proficient",
+				transferable: true,
+				quote: "Manages listings, ads and fulfilment across two marketplaces."
+			}
+		],
+		readiness: readiness(69, [
+			{
+				id: "r1",
+				label: "Quality of evidence",
+				labelTh: "คุณภาพหลักฐาน",
+				weight: 20,
+				score: 15,
+				reason: "Platform exports carry order counts and dates that can be re-checked."
+			},
+			{
+				id: "r2",
+				label: "Diversity of projects",
+				labelTh: "ความหลากหลายของโปรเจกต์",
+				weight: 15,
+				score: 10,
+				reason: "Commerce, content and supply-chain work in one venture."
+			},
+			{
+				id: "r3",
+				label: "Learning consistency",
+				labelTh: "ความต่อเนื่องในการเรียนรู้",
+				weight: 12,
+				score: 8,
+				reason: "Workshop attendance plus steady platform-feature adoption."
+			},
+			{
+				id: "r4",
+				label: "GitHub activity",
+				labelTh: "กิจกรรมบน GitHub",
+				weight: 13,
+				score: 0,
+				reason: "Not applicable — excluded from matching rather than counted as a deficit."
+			},
+			{
+				id: "r5",
+				label: "Portfolio quality",
+				labelTh: "คุณภาพพอร์ตโฟลิโอ",
+				weight: 10,
+				score: 9,
+				reason: "Public storefront and content archive act as a live portfolio."
+			},
+			{
+				id: "r6",
+				label: "Collaboration experience",
+				labelTh: "ประสบการณ์ทำงานร่วมกัน",
+				weight: 10,
+				score: 8,
+				reason: "Coordinates two staff and a five-household supplier network."
+			},
+			{
+				id: "r7",
+				label: "Problem complexity",
+				labelTh: "ความซับซ้อนของปัญหา",
+				weight: 10,
+				score: 9,
+				reason: "Pricing, logistics and seasonal demand handled with measurable results."
+			},
+			{
+				id: "r8",
+				label: "Skill verification level",
+				labelTh: "ระดับการยืนยันทักษะ",
+				weight: 10,
+				score: 6,
+				reason: "Two skills verified against platform exports; the rest are pending."
+			}
+		], [
+			"ยอดขายเติบโตวัดผลได้",
+			"เจรจาต่อรองกับซัพพลายเออร์",
+			"ผลิตคอนเทนต์ต่อเนื่อง"
+		], [
+			"Basic bookkeeping evidence",
+			"Inventory forecasting",
+			"Formal business registration documents"
+		]),
+		jobMatches: [
+			{
+				title: "E-commerce Manager",
+				matchScore: 80,
+				matching: ["Entrepreneurial Mindset", "Digital Literacy"],
+				missing: ["Marketplace analytics tooling"],
+				rationale: "Two years of first-party sales operations evidence."
+			},
+			{
+				title: "Content Producer",
+				matchScore: 72,
+				matching: ["Creativity", "Digital Literacy"],
+				missing: ["Editing software depth"],
+				rationale: "96 published videos with audience metrics."
+			},
+			{
+				title: "Purchasing Assistant",
+				matchScore: 66,
+				matching: ["Negotiation", "Communication"],
+				missing: ["ERP systems"],
+				rationale: "Documented supplier negotiation with agreed terms."
+			}
+		],
+		roadmap: [{
+			week: 1,
+			focus: "Bookkeeping",
+			action: "Record one month of cash flow in a template",
+			outcome: "A verifiable financial artefact",
+			hours: 4
+		}, {
+			week: 2,
+			focus: "Analytics",
+			action: "Build a simple sales dashboard from marketplace exports",
+			outcome: "Metric definitions documented",
+			hours: 5
+		}]
+	}
+];
+/** Anti-bias framework — attributes the model is never allowed to score. */
+var BIAS_EXCLUDED = [
+	{
+		field: "GPA",
+		labelTh: "เกรดเฉลี่ย",
+		reason: "Correlates with school resourcing, not job capability."
+	},
+	{
+		field: "University name",
+		labelTh: "ชื่อมหาวิทยาลัย",
+		reason: "Institutional prestige is not evidence of skill."
+	},
+	{
+		field: "School name",
+		labelTh: "ชื่อโรงเรียน",
+		reason: "Reflects family location and income."
+	},
+	{
+		field: "Age",
+		labelTh: "อายุ",
+		reason: "Protected attribute; irrelevant to demonstrated skill."
+	},
+	{
+		field: "Gender",
+		labelTh: "เพศ",
+		reason: "Protected attribute."
+	},
+	{
+		field: "Religion",
+		labelTh: "ศาสนา",
+		reason: "Protected attribute."
+	},
+	{
+		field: "Ethnicity",
+		labelTh: "เชื้อชาติ",
+		reason: "Protected attribute."
+	},
+	{
+		field: "Province / hometown",
+		labelTh: "จังหวัด",
+		reason: "Proxy for socio-economic background."
+	},
+	{
+		field: "Photograph",
+		labelTh: "รูปถ่าย",
+		reason: "Enables appearance-based bias."
+	},
+	{
+		field: "Economic status",
+		labelTh: "ฐานะทางเศรษฐกิจ",
+		reason: "Proxy for opportunity, not ability."
+	}
+];
+var BIAS_ALLOWED = [
+	"Skills extracted from evidence",
+	"The evidence itself (quote, source, page)",
+	"Learning progress over time",
+	"Project experience and complexity",
+	"Skill verification level"
+];
+var biasFlags = [
+	{
+		field: "GPA",
+		detectedIn: "Nattapong_Resume_2026.pdf · page 1",
+		excerpt: "B.Eng Computer Engineering, Chulalongkorn University (GPA 3.62)",
+		action: "Redacted before scoring. Neither GPA nor institution contributed to any skill or match score."
+	},
+	{
+		field: "University name",
+		detectedIn: "Nattapong_Resume_2026.pdf · page 1",
+		excerpt: "Chulalongkorn University",
+		action: "Stored for display only, excluded from every model input."
+	},
+	{
+		field: "Photograph",
+		detectedIn: "Kanya_Portfolio_2026.pdf · page 1",
+		excerpt: "Author headshot detected on the cover page",
+		action: "Image dropped at pre-processing; no facial features were embedded."
+	},
+	{
+		field: "Province / hometown",
+		detectedIn: "Guided interview transcript · Pornthip Kaewkla",
+		excerpt: "Address in Nakhon Si Thammarat province",
+		action: "Removed from the embedding input; location used only for job-location preference, never for scoring."
+	}
+];
+/** Explainable AI pipeline, end to end. */
+var explainPipeline = [
+	{
+		id: "upload",
+		label: "Upload",
+		note: "Files, links or a guided interview for users without documents."
+	},
+	{
+		id: "ocr",
+		label: "OCR",
+		note: "Thai + English OCR for scans, photos and certificates."
+	},
+	{
+		id: "extract",
+		label: "Extract Text",
+		note: "Layout-aware text with page and paragraph anchors preserved."
+	},
+	{
+		id: "chunk",
+		label: "Chunking",
+		note: "Semantic chunks that never cross a paragraph boundary."
+	},
+	{
+		id: "embed",
+		label: "Embedding",
+		note: "Multilingual embeddings; bias-flagged spans removed first."
+	},
+	{
+		id: "skills",
+		label: "Skill Extraction",
+		note: "Hard, soft and transferable skills — evidence required."
+	},
+	{
+		id: "link",
+		label: "Evidence Linking",
+		note: "Each skill bound to source, page, paragraph and quote."
+	},
+	{
+		id: "reason",
+		label: "Reasoning",
+		note: "A written justification stored with every claim."
+	},
+	{
+		id: "confidence",
+		label: "Confidence",
+		note: "Scored from source strength, corroboration and specificity."
+	},
+	{
+		id: "standards",
+		label: "Standard Mapping",
+		note: "ESCO, O*NET, SFIA and TQF alignment."
+	},
+	{
+		id: "passport",
+		label: "Digital Skill Passport",
+		note: "Signed, shareable, publicly verifiable."
+	},
+	{
+		id: "match",
+		label: "Job Matching",
+		note: "Skills and evidence only — protected attributes excluded."
+	}
+];
+var impactMetrics = {
+	totalUsers: 12480,
+	neetPassports: 2140,
+	verifiedSkills: 38620,
+	interviewsGranted: 3105,
+	hiresReported: 742,
+	organisations: 86,
+	universities: 19,
+	skillGapReduction: 27,
+	jobMismatchReduction: 31,
+	averageReadinessLift: 14
+};
+var readinessTrend = [
+	{
+		month: "Feb",
+		readiness: 58,
+		matched: 41
+	},
+	{
+		month: "Mar",
+		readiness: 61,
+		matched: 46
+	},
+	{
+		month: "Apr",
+		readiness: 64,
+		matched: 51
+	},
+	{
+		month: "May",
+		readiness: 66,
+		matched: 57
+	},
+	{
+		month: "Jun",
+		readiness: 69,
+		matched: 62
+	},
+	{
+		month: "Jul",
+		readiness: 72,
+		matched: 68
+	}
+];
+var cohortImpact = [
+	{
+		cohort: "NEET youth",
+		passports: 2140,
+		interviews: 612,
+		hires: 148
+	},
+	{
+		cohort: "Students",
+		passports: 5820,
+		interviews: 1584,
+		hires: 361
+	},
+	{
+		cohort: "Career changers",
+		passports: 2610,
+		interviews: 641,
+		hires: 152
+	},
+	{
+		cohort: "Micro-entrepreneurs",
+		passports: 1910,
+		interviews: 268,
+		hires: 81
+	}
+];
+var gapClosure = [
+	{
+		skill: "Digital Literacy",
+		before: 38,
+		after: 71
+	},
+	{
+		skill: "Communication",
+		before: 44,
+		after: 68
+	},
+	{
+		skill: "Problem Solving",
+		before: 41,
+		after: 66
+	},
+	{
+		skill: "Data Basics",
+		before: 22,
+		after: 49
+	},
+	{
+		skill: "Cloud & DevOps",
+		before: 18,
+		after: 43
+	}
+];
+var successStories = [
+	{
+		id: "st1",
+		persona: "NEET youth",
+		name: "Pornthip K.",
+		before: "ไม่มี Resume และไม่เคยสมัครงานในระบบ",
+		action: "ตอบแบบสัมภาษณ์นำทางและอัปโหลดหลักฐานการช่วยธุรกิจครอบครัวและงานอาสาสมัคร ระบบสกัด Transferable Skills พร้อมหลักฐานทุกข้อ",
+		result: "ได้รับเชิญสัมภาษณ์ตำแหน่ง Customer Support Associate จาก 2 บริษัท",
+		metric: "Work Readiness 41 → 63",
+		quote: "ครั้งแรกที่มีเอกสารบอกได้ว่าเราทำอะไรเป็น โดยไม่ต้องมีปริญญา"
+	},
+	{
+		id: "st2",
+		persona: "Career changer",
+		name: "Arthit P.",
+		before: "ทำงานโรงแรม 8 ปี ต้องการเปลี่ยนสายงานเทคโนโลยีแต่ไม่มีผลงานสายไอที",
+		action: "ใช้ Portfolio จากการเรียนออนไลน์และโปรเจกต์อัตโนมัติเล็ก ๆ สร้าง Skill Passport ที่แสดง Customer Service และ Problem Solving พร้อมตัวเลขวัดผล",
+		result: "ผ่านเข้ารอบสัมภาษณ์ตำแหน่ง IT Support Specialist",
+		metric: "Job match 52% → 78%",
+		quote: "HR เห็นหลักฐานจริง ไม่ใช่แค่คำว่า 'เปลี่ยนสายงาน'"
+	},
+	{
+		id: "st3",
+		persona: "Computer Science student",
+		name: "Nattapong S.",
+		before: "มีทักษะแต่ไม่รู้ว่าขาดอะไรสำหรับตำแหน่งที่ต้องการ",
+		action: "ใช้ Gap Analysis และ Learning Roadmap 6 สัปดาห์ พร้อมยืนยันทักษะกับผู้ตรวจสอบ",
+		result: "ปิดช่องว่างด้าน Testing และ Event-driven architecture",
+		metric: "Work Readiness 72 → 84",
+		quote: "ระบบบอกชัดว่าต้องทำอะไรต่อ และหลักฐานอะไรจะทำให้คะแนนขึ้น"
+	},
+	{
+		id: "st4",
+		persona: "Micro-entrepreneur",
+		name: "Somsak T.",
+		before: "ขายของออนไลน์แต่ไม่มีเอกสารรับรองทักษะใด ๆ",
+		action: "นำข้อมูลยอดขายและคอนเทนต์เข้าระบบ AI แปลงเป็นทักษะ Negotiation, Entrepreneurial Mindset พร้อมหลักฐาน",
+		result: "ได้รับการติดต่อจากผู้ประกอบการรายใหญ่ให้ดูแลช่องทางออนไลน์",
+		metric: "Verified skills 0 → 6",
+		quote: "ประสบการณ์หน้าร้านกลายเป็นทักษะที่คนอื่นตรวจสอบได้"
+	}
+];
+//#endregion
+export { explainPipeline as a, personas as c, cohortImpact as i, readinessTrend as l, BIAS_EXCLUDED as n, gapClosure as o, biasFlags as r, impactMetrics as s, BIAS_ALLOWED as t, successStories as u };
